@@ -19,7 +19,7 @@ global.botscript = 'https://github.com/STAR-KING0/Alya-v2' //script link
 global.packname = "Sticker By"
 global.author = "🌟STAR KING\n\n+2348100835767"
 global.creator = "2348100835767@s.whatsapp.net"
-global.xprefix = '.'
+global.xprefix = '+'
 global.premium = ["2348100835767"] // Premium User
 
 //channel id
