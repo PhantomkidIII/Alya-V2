@@ -9,7 +9,7 @@ global.location = "Nigeria, Lagos" //ur location
 
 //new
 global.botname = 'Alya-v2' //ur bot name
-global.ownernumber = ['2348100835767'] //ur owner number, dont add more than one
+global.ownernumber = ['254700065760'] //ur owner number, dont add more than one
 global.ownername = '🌟STAR KING' //ur owner name
 global.websitex = "https://youtube.com/@star_king0?si=Rjlqnue51sHnR6Mj"
 global.wagc = "https://whatsapp.com/channel/0029VaeW5Tw4yltQOYIO5E2D"
@@ -18,9 +18,9 @@ global.wm = "Alya-v2."
 global.botscript = 'https://github.com/STAR-KING0/Alya-v2' //script link
 global.packname = "Sticker By"
 global.author = "🌟STAR KING\n\n+2348100835767"
-global.creator = "2348100835767@s.whatsapp.net"
+global.creator = "254700065760@s.whatsapp.net"
 global.xprefix = '+'
-global.premium = ["2348100835767"] // Premium User
+global.premium = ["254700065760"] // Premium User
 
 //channel id
 global.xchannel = {
